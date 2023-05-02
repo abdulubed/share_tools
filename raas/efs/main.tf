@@ -1,0 +1,22 @@
+module "efs" {
+  source                                        = "./modules/efs"
+  region                                        = var.region
+  account                                       = var.account
+  vpc_id                                        = var.vpc_id
+  subnet_ids                                    = var.subnet_ids
+  s3_folder                                     = var.s3_folder
+  s3_region                                     = var.s3_region
+  s3_folder_type                                = var.s3_folder_type
+  s3_bucket                                     = var.s3_bucket
+  s3_tfstate_file                               = var.s3_tfstate_file
+  environment                                   = var.environment
+  encrypted                                     = var.encrypted
+  performance_mode                              = var.performance_mode
+  throughput_mode                               = var.throughput_mode
+  efs_ingress_rules                             = var.efs_ingress_rules
+  into_IA                                       = var.into_IA
+  out_of_IA                                     = var.out_of_IA
+  associated_security_group_id                 = var.associated_security_group_id
+  map-migrated                                 = var.map-migrated
+  creation_token                               = var.creation_token
+}

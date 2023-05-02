@@ -1,0 +1,20 @@
+module "iam" {
+  source                          = "./modules"
+  region                          = var.region
+  account                         = var.account
+  s3_folder                       = var.s3_folder
+  s3_region                       = var.s3_region
+  s3_folder_type                  = var.s3_folder_type
+  s3_bucket                       = var.s3_bucket
+  s3_tfstate_file                 = var.s3_tfstate_file
+  environment                     = var.environment
+  server1_secret                  = var.server1_secret
+  server2_secret                  = var.server2_secret
+  snowflake                       = var.snowflake
+  map-migrated-server-id          = var.map-migrated-server-id
+  validate_mtd_lambda_exec_role   = var.validate_mtd_lambda_exec_role
+  validate_mtd_lambda_exec_policy = var.validate_mtd_lambda_exec_policy
+  iam_policy_arn                  = var.iam_policy_arn  
+  aws_user_snowflake              = var.aws_user_snowflake
+  aws_iam_snowflake_user_id       = var.aws_iam_snowflake_user_id
+}

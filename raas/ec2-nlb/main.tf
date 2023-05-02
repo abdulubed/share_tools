@@ -1,0 +1,22 @@
+module "ec2-nlb" {
+  source                      = "./modules/ec2-nlb"
+  region                      = var.region
+  account                     = var.account
+  vpc_id                      = var.vpc_id
+  subnet_ids                  = var.subnet_ids
+  s3_folder                   = var.s3_folder
+  s3_region                   = var.s3_region
+  s3_folder_type              = var.s3_folder_type
+  s3_bucket                   = var.s3_bucket
+  s3_tfstate_file             = var.s3_tfstate_file
+  environment                 = var.environment
+  map-migrated-server-id      = var.map-migrated-server-id
+  deletion_protection_enabled = var.deletion_protection_enabled
+  internal                    = var.internal
+  lb_name                     = var.lb_name
+  tg_name                     = var.tg_name
+  lbport                      = var.lbport
+  tgport                      = var.tgport
+  instance_list               = var.instance_list
+  target_type                 = var.target_type
+}

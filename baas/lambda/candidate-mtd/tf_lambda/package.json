@@ -1,0 +1,22 @@
+{
+  "name": "lambda_baas_mtd",
+  "version": "1.0.0",
+  "description": "Lambda Baas MTD",
+  "main": "index.js",
+  "author": "SAM CLI",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "date-and-time": "^2.1.0",
+    "mssql": "^7.3.0",
+    "node": "^17.3.1",
+    "tableify": "^1.1.1"
+  },
+  "scripts": {
+    "test": "mocha tests/unit/"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}
